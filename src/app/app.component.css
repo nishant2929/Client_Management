@@ -1,0 +1,126 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #005bb5, #003d80);
+    position: relative;
+    padding: 1.2rem 4rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease forwards;
+    overflow: hidden;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* Background Overlay */
+  .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* Centering the Brand */
+  .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.9em;
+    letter-spacing: 1.2px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .navbar-brand:hover {
+    color: #dce8ff;
+    text-decoration: none;
+  }
+  
+  /* Navbar Links - Centered with Spacing */
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    gap: 2.2rem;
+    z-index: 1;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .navbar-nav .nav-item {
+    position: relative;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 1.15em;
+    padding: 0.8rem 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover and Active Effects */
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f4ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #d6eaff;
+  }
+  
+  /* Underline Hover Effect */
+  .navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #ffffff;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      flex-direction: column;
+      gap: 1.2rem;
+      text-align: center;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  /* Fade-in Animation for Navbar */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

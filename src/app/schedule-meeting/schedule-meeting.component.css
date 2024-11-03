@@ -1,0 +1,86 @@
+/* Container Styles */
+.container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Heading Styles */
+  h2 {
+    font-size: 2rem; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  /* Input Styles */
+  .form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Border color */
+    transition: border-color 0.3s; /* Transition for focus effect */
+  }
+  
+  /* Input Focus Effect */
+  .form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow on focus */
+  }
+  
+  /* Button Styles */
+  .btn {
+    border-radius: 5px; /* Rounded corners for buttons */
+  }
+  
+  /* Button Block Styles */
+  .btn-block {
+    width: 100%; /* Make buttons full width */
+    padding: 10px; /* Add padding to buttons */
+  }
+  
+  /* Table Styles */
+  .table {
+    margin-top: 20px; /* Space above the table */
+    border-collapse: collapse; /* Collapse table borders */
+  }
+  
+  /* Table Header Styles */
+  .table th {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text color */
+    padding: 10px; /* Add padding to header cells */
+  }
+  
+  /* Table Row Styles */
+  .table tr {
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  /* Table Row Hover Effect */
+  .table tr:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+  }
+  
+  /* Table Cell Styles */
+  .table td {
+    padding: 10px; /* Add padding to table cells */
+  }
+  
+  /* Button inside the table */
+  .btn-warning,
+  .btn-danger {
+    margin-right: 5px; /* Space between action buttons */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
